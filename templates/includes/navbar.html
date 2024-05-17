@@ -1,0 +1,21 @@
+<nav>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="About Me" data-bs-placement="top"
+            data-bs-title="About Me">
+       <a class="nav-link {% if request.resolver_match.url_name == 'index' %}active{% endif %}" aria-current="page" href="/">Home</a>
+        
+        
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right"
+            data-bs-title="Contact">
+       <a class="nav-link {% if request.resolver_match.url_name == 'contact' %}active{% endif %}" href="/contact">Contact</a>
+        
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Tooltip on bottom">
+        Tooltip on bottom
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-title="Tooltip on left">
+        Tooltip on left
+    </button>
+</nav>
